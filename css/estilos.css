@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+}
+
+header{
+  padding: 2%;
+  background-color: #5b7989;
+  border-radius: 10px 10px 0 0;
+}
+
+header h1{
+  font-family: Dancing Script;
+  color: white;
+  text-shadow: 2px 2px  #02010a;
+}
+
+ a{
+  float:right;
+  text-decoration: none;
+  text-shadow: none;
+  padding: 10px;
+  font-size: 20px;
+  font-family: Dancing Script;
+  color: white;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+#wrapper{
+  width: 900px;
+  margin: auto;
+}
+
+#imagen1{
+  background-color: #82c3a6;
+  text-align: center;
+  padding: 5vh
+}
+
+#imagen1 >  img{
+  height: 50vh;
+  width: 70%;
+  box-shadow: 2px 2px #02010a;
+}
+
+.contenedor{
+  width: 100%;
+  background-color: #d5c75f;
+  display: flex;
+	flex-direction: row;
+  border: 1px;
+}
+
+#imagen2{
+  padding: 5vh 5vw;
+  width: 50%;
+}
+
+#imagen2 img{
+  height: 40vh;
+  width:80%;
+  transition-property: rotate() box-shadow;
+  transition-duration: 2s;
+  box-shadow: 2px 2px #02010a;
+  display:block;
+  margin: 0 auto;
+}
+
+#imagen2 img:hover{
+  transform:rotate(10deg);
+  box-shadow:2px 2px  #82c3a6;
+}
+
+figcaption{
+  text-align: center;
+  font-family: Dancing Script;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#imagen3{
+  padding: 5vh 5vw;
+  width: 50%;
+}
+
+#imagen3 img{
+  height: 40vh;
+  width:80%;
+  box-shadow: 2px 2px #02010a;
+  transition-property: translate() box-shadow;
+  transition-duration: 2s;
+  display:block;
+  margin: 0 auto;
+}
+
+#imagen3 img:hover{
+  transform: translate(20px, -5px);
+  box-shadow: 2px 2px #82c3a6;
+}
+
+@media and (min-width: 900px){
+
+  #wrapper
+  {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 890px){
+  h1{color:black;}
+
+  #wrapper
+  {
+    width: 100%;
+    margin: auto;
+  }
+  #imagen1
+  {
+    width: 100%;
+  }
+  #imagen2 img
+  {
+    width: 100%;
+  }
+  #imagen2 img
+  {
+    width: 100%;
+  }
+  header
+  {
+    width: 100%;
+  }
+}
+
+footer{
+  background-color: #c6d5c5;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+	flex-direction: row;
+  padding: 2%;
+  font-family: Dancing Script;
+  font-weight: bold;
+  text-align: center;
+}
+
+#colum1{
+  width: 25%;
+}
+
+#colum2{
+  width: 25%;
+}
+
+#colum3{
+  width: 25%;
+}
+
+#colum4{
+  width: 25%;
+}
