@@ -3,7 +3,7 @@
 }
 
 header{
-  padding: 2%;
+  padding: 2% 10%;
   background-color: #5b7989;
   border-radius: 10px 10px 0 0;
 }
@@ -54,7 +54,7 @@ a:hover{
 }
 
 #imagen2{
-  padding: 5vh 5vw;
+  padding: 5%;
   width: 50%;
 }
 
@@ -81,7 +81,7 @@ figcaption{
 }
 
 #imagen3{
-  padding: 5vh 5vw;
+  padding: 5%;
   width: 50%;
 }
 
@@ -98,41 +98,6 @@ figcaption{
 #imagen3 img:hover{
   transform: translate(20px, -5px);
   box-shadow: 2px 2px #82c3a6;
-}
-
-@media and (min-width: 900px){
-
-  #wrapper
-  {
-    width: 100%;
-    margin: auto;
-  }
-}
-
-@media (max-width: 890px){
-  h1{color:black;}
-
-  #wrapper
-  {
-    width: 100%;
-    margin: auto;
-  }
-  #imagen1
-  {
-    width: 100%;
-  }
-  #imagen2 img
-  {
-    width: 100%;
-  }
-  #imagen2 img
-  {
-    width: 100%;
-  }
-  header
-  {
-    width: 100%;
-  }
 }
 
 footer{
@@ -160,4 +125,74 @@ footer{
 
 #colum4{
   width: 25%;
+}
+
+@media and (min-width: 900px){
+
+  #wrapper
+  {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px){
+
+  a{
+    float: none;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  .contenedor{
+    display: flex;
+  	flex-direction: column;
+    text-align: center;
+  }
+
+  #wrapper
+  {
+    width: 100%;
+    margin: auto;
+  }
+  #imagen1
+  {
+    width: 100%;
+    margin: auto;
+  }
+  #imagen2
+  {
+    width: 100%;
+    margin: auto;
+  }
+  #imagen3
+  {
+    width: 100%;
+    margin: auto;
+  }
+
+  footer
+  {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #colum1{
+    width: 100%;
+  }
+
+  #colum2{
+    width: 100%;
+  }
+
+  #colum3{
+    width: 100%;
+  }
+
+  #colum4{
+    width: 100%;
+  }
+
 }
